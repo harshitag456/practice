@@ -1,0 +1,60 @@
+
+<style>
+    #id1{
+        text-align:center;
+        text-decoration:underline;
+        color:blue;
+    }
+   table{
+        margin:auto;
+        height:350px;
+        width:500px;
+        font-size:20px;
+        text-align:center;
+
+        }
+
+     table,td{
+     border:5px solid black;
+     border-style:inset;
+     border-collapse:collapse;
+        }
+        td{
+            height:50px;
+            padding:10px;
+
+        }
+        tr:nth-child(odd) {background-color: #f2f2f2}
+</style>
+
+
+<h2 id="id1">Personal Info</h2>
+<br>
+<table >
+    <tr>
+    <td>Name</td>
+    <td>{{listid.name}}</td>
+    </tr>
+    <tr>
+        <td>Branch</td>
+        <td>{{listid.branch}}</td>
+    </tr>
+    <tr>
+        <td>Roll No</td>
+        <td>{{listid.roll_no}}</td>
+    </tr>
+    <tr>
+        <td>Date_Of_Birth</td>
+        <td>{{listid.date_of_birth}}</td>
+
+    </tr>
+    <tr>
+        <td>City</td>
+        <td>{{listid.city}}</td>
+    </tr>
+
+</table>
+
+<h2><a href="/">Go Back</h2>
+
+

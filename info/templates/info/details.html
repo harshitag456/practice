@@ -1,0 +1,34 @@
+<style>
+
+div#div1 { text-align: center; }
+ol { display: inline-block; text-align: left;font-size:22px; }
+a{
+text-decoration:none;
+color:rgb(60, 179, 113);
+}
+a:hover {
+    color: red;
+    background-color: transparent;
+    text-decoration: underline;
+}
+</style>
+<br><br>
+
+<div style="border:5px groove black;margin:auto;margin-left:450px;margin-right:450px;">
+<h2 style="text-align:center;text-decoration:underline;color:brown;">List Of Students</h2>
+
+
+{% if comp_list %}
+<div id="div1">
+    <ol type="1">
+        {% for list in comp_list %}
+        <a href="/{{list.id}}"><li>{{list.name}}</li></a>
+        {%endfor%}
+    </ol>
+</div>
+
+
+{% endif %}
+
+</div>
+
